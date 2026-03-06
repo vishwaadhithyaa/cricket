@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BATIQ - Cricket Store</title>
+  <link rel="shortcut icon" href="./assets/images/logo2.png" type="image/x-icon">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Merienda:wght@300..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+<header>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm  custom-navbar">
+      <div class="container">
+
+        <!-- Left Side: Logo + Brand -->
+        <a class="navbar-brand d-flex align-items-center fw-bold fs-1" href="#"
+          style="font-family: var(--font-mono) ;color: #90b25d; letter-spacing: 1px;">
+          <img src="./assets/images/logo2.png" alt="Logo" width="60"  class="me-2">
+          BATIQ
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Right Side: Menu Items -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold ">
+            <li class="nav-item pe-3">
+              <a class="nav-link " href="#">Home</a>
+            </li>
+            <li class="nav-item pe-3">
+              <a class="nav-link" href="#">Menu</a>
+            </li>
+            <li class="nav-item pe-3">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <section class="hero-section">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <img src="./assets/images/pc1 v.jpg.jpeg" class="d-block w-100 hero-img" alt="Slide 1">
+            <div class="carousel-caption">
+              <h1 class="fw-bold display-4">Gear Up Like a Champion</h1>
+              <p>Premium Bats. Pro Gloves. Complete Cricket Kits.</p>
+              <a href="#" class="btn btn-warning px-4">Shop Now</a>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <img src="./assets/images/pic 2v.jpg.jpeg" class="d-block w-100 hero-img" alt="Slide 2">
+            <div class="carousel-caption">
+              <h1 class="fw-bold display-4">Power Your Perfect Shot</h1>
+              <p>Premium English Willow & Kashmir Willow Bats for Every Player.</p>
+              <a href="#" class="btn btn-warning px-4">Shop Cricket Bats</a>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <img src="./assets/images/pic 3v.jpg.jpeg" class="d-block w-100 hero-img" alt="Slide 3">
+            <div class="carousel-caption">
+              <h1 class="fw-bold display-4">Complete Your Cricket Kit</h1>
+              <p>All-in-One Cricket Sets for Practice & Match Day Performance.</p>
+              <a href="#" class="btn btn-warning px-4">Explore Full Kits</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+
+      </div>
+    </section>
+</header>
+<main>
+  <div class="container newChapter " style="padding: 70px 0px;"> <!--products -->
+    <div id="newChapterCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="row text-center pb-5">
+        <div class="col-12">
+          <h2 class="fw-bold fs-1">PRODUCTS</h2>
+        </div>
+      </div>
+      <div class="carousel-inner">
+
+        <div class="carousel-item active text-start">
+          <div class="row g-5">
+            <div class="col-12 col-lg-4 newChapterCard">
+              <div class="cardHeader"> <!--card-1 -->
+                <img src="./assets/images/card1 v.jpg.jpeg" alt="" class="img-fluid rounded-0">
+              </div>
+              <div class="cardMain py-4 px-2 fs-4 bg-light h-50">
+                <h3 class="fw-bold text-center">PowerDrive English Willow Bat</h3>
+                <p>Crafted from top-grade willow for explosive performance.
+                  Balanced weight distribution for smooth strokes and maximum control.</p>
+                <a href="#" class="fs-6 "
+                  style="padding: 6px; background-color: #969696; color: white; margin-right: 1rem;">ADD TO CART</a>
+                <a href="#" class="fs-6"
+                  style="padding: 6px; background-color: #969696; color: white; margin-right: 1rem;">BUY NOW</a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 newChapterCard">
+              <div class="cardHeader"> <!--card-2 -->
+                <img src="./assets/images/card4 v.jpg.jpeg" alt="" class="img-fluid rounded-0">
+              </div>
+              <div class="cardMain py-4 px-2 fs-4 bg-light h-50">
+                <h3 class="fw-bold text-center">Elite Spike Pro Shoes</h3>
+                <p>Metal spike outsole delivers maximum ground grip on grassy pitches.
+                  Reinforced toe support offers durability for fast bowlers.</p>
+                <a href="#" class="fs-6"
+                  style="padding: 6px; background-color: #969696; color: white; margin-right: 1rem;">ADD TO CART</a>
+                <a href="#" class="fs-6"
+                  style="padding: 6px; background-color: #969696; color: white; margin-right: 1rem;">BUY NOW</a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 newChapterCard">
+              <div class="cardHeader"> <!--card-3 -->
+                <img src="./assets/images/card 3v.jpg.jpeg" alt="" class="img-fluid rounded-0">
+              </div>
+              <div class="cardMain py-4 px-2 fs-4 bg-light h-50">
+                <h3 class="fw-bold text-center">Mumbai Indians Official Jersey</h3>
+                <p>Premium quality MI fan jersey with breathable fabric technology.
+                  Perfect for match days, practice sessions, or supporting your team in style.</p>
+                <a href="#" class="fs-6"
+                  style="padding: 6px; background-color: #969696; color: white; margin-right: 1rem;">ADD TO CART</a>
+                <a href="#" class="fs-6"
+                  style="padding: 6px; background-color: #969696; color: white; margin-right: 1rem;">BUY NOW</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row g-5 text-start">
+            <div class="col-12 col-lg-4 newChapterCard">
+              <div class="cardHeader">
+                <img src="./assets/images/card2 v.jpg.jpeg" alt="" class="img-fluid rounded-0">
+              </div>
+              <div class="cardMain py-4 px-2 fs-4 bg-light h-50">
+                <h3 class="fw-bold text-center">Complete Cricket Starter Kit</h3>
+                <p>Includes bat, pads, gloves, helmet, and essential accessories.
+                  Ideal for beginners and club-level players.</p>
+                <a href="#" class="fs-6"
+                  style="padding: 6px; background-color: #969696; color: white; margin-right: 1rem;">ADD TO CART</a>
+                <a href="#" class="fs-6"
+                  style="padding: 6px; background-color: #969696; color: white; margin-right: 1rem;">BUY NOW</a>
+
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-4 newChapterCard">
+              <div class="cardHeader">
+                <img src="./assets/images/card5 v.jpg.jpeg" alt="" class="img-fluid rounded-0">
+              </div>
+              <div class="cardMain py-4 px-2 fs-4 bg-light h-50">
+                <h3 class="fw-bold text-center">Pro Grip Batting Gloves</h3>
+                <p>Designed for maximum comfort and superior grip during powerful strokes.
+                  High-density padding ensures excellent hand protection in every match.</p>
+                <a href="#" class="fs-6"
+                  style="padding: 6px; background-color: #969696; color: white; margin-right: 1rem;">ADD TO CART</a>
+                <a href="#" class="fs-6"
+                  style="padding: 6px; background-color: #969696; color: white; margin-right: 1rem;">BUY NOW</a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 newChapterCard">
+              <div class="cardHeader">
+                <img src="./assets/images/mrf-champ-kit.webp" alt="" class="img-fluid rounded-0">
+              </div>
+              <div class="cardMain py-4 px-2 fs-4 bg-light h-50">
+                <h3 class="fw-bold text-center">Premium Match Combo Kit</h3>
+                <p>Includes full cricket kit along with official team jersey.
+                  Perfect for tournaments, academies, and professional training.</p>
+                <a href="#" class="fs-6"
+                  style="padding: 6px; background-color: #969696; color: white; margin-right: 1rem;">ADD TO CART</a>
+                <a href="#" class="fs-6"
+                  style="padding: 6px; background-color: #969696; color: white; margin-right: 1rem;">BUY NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item  text-start">
+          <div class="row g-5">
+            <div class="col-12 col-lg-4 newChapterCard">
+              <div class="cardHeader"> <!--card-1 -->
+                <img src="./assets/images/Striker-Bat-1_d0fa191f-774b-4c30-957e-e35fac5e6cd5.jpg " alt=""
+                  class="img-fluid rounded-0 " style="width: auto ;">
+              </div>
+              <div class="cardMain py-4 px-2 fs-4 bg-light h-50">
+                <h3 class="fw-bold text-center">Classic Kashmir Willow Bat</h3>
+                <p>Durable and powerful bat for everyday practice sessions.
+                  Ideal choice for school and beginner-level cricket.</p>
+                <div class=" col-12 ">
+                  <a href="#" class="fs-6 "
+                    style="padding: 6px; background-color: #969696; color: white; margin-right: 1rem; ">ADD TO CART</a>
+                  <a href="#" class="fs-6"
+                    style="padding: 6px; background-color: #969696; color: white; margin-right: 1rem;">BUY NOW</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 newChapterCard">
+              <div class="cardHeader"> <!--card-2 -->
+                <img src="./assets/images/3_676_3.jpg" alt="" class="img-fluid rounded-0">
+              </div>
+              <div class="cardMain py-4 px-2 fs-4 bg-light h-50">
+                <h3 class="fw-bold text-center">Elite Batting Pads</h3>
+                <p>Lightweight yet highly protective pads for confident front-foot play.
+                  Built with shock-absorbing layers for professional-level safety.</p>
+                <a href="#" class="fs-6"
+                  style="padding: 6px; background-color: #969696; color: white; margin-right: 1rem;">ADD TO CART</a>
+                <a href="#" class="fs-6"
+                  style="padding: 6px; background-color: #969696; color: white; margin-right: 1rem;">BUY NOW</a>
+
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 newChapterCard ">
+              <div class="cardHeader"> <!--card-3 -->
+                <img src="./assets/images/th_cb_15_large.jpg" alt="" class="img-fluid rounded-0">
+              </div>
+              <div class="cardMain py-4 px-2 fs-4 bg-light h-50">
+                <h3 class="fw-bold text-center">Premium Red Leather Test Ball</h3>
+                <p>High-quality stitched leather ball for long-format matches.
+                  Delivers consistent swing, bounce, and durability.</p>
+                <a href="#" class="fs-6"
+                  style="padding: 6px; background-color: #969696; color: white; margin-right: 1rem;">ADD TO Cart</a>
+                <a href="#" class="fs-6"
+                  style="padding: 6px; background-color: #969696; color: white; margin-right: 1rem;">BUY NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Indicators MUST be here -->
+      <div class="carousel-indicators custom-indicators ">
+        <button type="button" data-bs-target="#newChapterCarousel" data-bs-slide-to="0"
+          class="active bg-black mb-5"></button>
+        <button type="button" data-bs-target="#newChapterCarousel" data-bs-slide-to="1" class=" bg-black"></button>
+        <button type="button" data-bs-target="#newChapterCarousel" data-bs-slide-to="2" class="bg-black"></button>
+      </div>
+    </div>
+  </div>
+
+  <section class="container my-5 bg-light ">
+    <div class="row align-items-center  overflow-hidden">
+
+      <!-- Left Side Image -->
+      <div class="col-lg-6 p-0">
+        <img src="https://images.unsplash.com/photo-1593341646782-e0b495cff86d" class="img-fluid w-100  "
+          style="height: 500px; object-fit: cover;" alt="Cricket Gear">
+      </div>
+
+      <!-- Right Side Form -->
+      <div class="col-lg-6 t p-5 ">
+        <h3 class="fw-bold mb-4 ">Enquiry Form</h3>
+
+        <form>
+          <div class="mb-3">
+            <label class="form-label ">Full Name</label>
+            <input type="text" class="form-control py-3 fs-5 rounded-0" placeholder="Enter your name" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Phone Number</label>
+            <input type="tel" class="form-control py-3 fs-5 rounded-0" placeholder="Enter your phone number" required>
+          </div>
+
+          <div class="mb-4">
+            <label class="form-label ">Email Address</label>
+            <input type="email" class="form-control py-3 fs-5 rounded-0" placeholder="Enter your email" required>
+          </div>
+
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-dark py-3 w-50 fs-5">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="testimonial-section py-5">
+    <div class="container">
+
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+
+          <!-- ===== SLIDE 1 ===== -->
+          <div class="carousel-item active">
+            <div class="row align-items-center justify-content-center">
+
+              <div class="col-md-4">
+                <div class="testimonial-card small-card text-center p-4">
+                  <div class="stars">★★★★★</div>
+                  <p>Bought the pads from A2. Amazing ones and looks professional.</p>
+                  <img src="https://i.pravatar.cc/70?img=5" class="rounded-circle mt-3">
+                  <h6 class="fw-bold mt-2 mb-0">Sanat</h6>
+                  <small>Goa</small>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="testimonial-card center-card text-center p-5">
+                  <div class="stars">★★★★★</div>
+                  <p>I got 2 customized bats from A2 and they are amazing.</p>
+                  <img src="https://i.pravatar.cc/80?img=3" class="rounded-circle mt-3">
+                  <h5 class="fw-bold mt-3 mb-0">Rajpratik</h5>
+                  <small>India</small>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="testimonial-card small-card text-center p-4">
+                  <div class="stars">★★★★★</div>
+                  <p>Custom made bat was perfect balance and superb ping.</p>
+                  <img src="https://i.pravatar.cc/70?img=8" class="rounded-circle mt-3">
+                  <h6 class="fw-bold mt-2 mb-0">Aman</h6>
+                  <small>UK</small>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- ===== SLIDE 2 ===== -->
+          <div class="carousel-item">
+            <div class="row align-items-center justify-content-center">
+
+              <div class="col-md-4">
+                <div class="testimonial-card small-card text-center p-4">
+                  <div class="stars">★★★★★</div>
+                  <p>Excellent build quality and smooth finish.</p>
+                  <img src="https://i.pravatar.cc/70?img=9" class="rounded-circle mt-3">
+                  <h6 class="fw-bold mt-2 mb-0">Rahul</h6>
+                  <small>Delhi</small>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="testimonial-card center-card text-center p-5">
+                  <div class="stars">★★★★★</div>
+                  <p>Superb packaging and timely delivery updates.</p>
+                  <img src="https://i.pravatar.cc/80?img=10" class="rounded-circle mt-3">
+                  <h5 class="fw-bold mt-3 mb-0">Karthik</h5>
+                  <small>Chennai</small>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="testimonial-card small-card text-center p-4">
+                  <div class="stars">★★★★★</div>
+                  <p>Highly recommend A2 products to everyone.</p>
+                  <img src="https://i.pravatar.cc/70?img=11" class="rounded-circle mt-3">
+                  <h6 class="fw-bold mt-2 mb-0">Vikas</h6>
+                  <small>Mumbai</small>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- ===== SLIDE 3 ===== -->
+          <div class="carousel-item">
+            <div class="row align-items-center justify-content-center">
+
+              <div class="col-md-4">
+                <div class="testimonial-card small-card text-center p-4">
+                  <div class="stars">★★★★★</div>
+                  <p>Very balanced bat and powerful strokes.</p>
+                  <img src="https://i.pravatar.cc/70?img=12" class="rounded-circle mt-3">
+                  <h6 class="fw-bold mt-2 mb-0">Arjun</h6>
+                  <small>Pune</small>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="testimonial-card center-card text-center p-5">
+                  <div class="stars">★★★★★</div>
+                  <p>Professional support team and fast shipping.</p>
+                  <img src="https://i.pravatar.cc/80?img=13" class="rounded-circle mt-3">
+                  <h5 class="fw-bold mt-3 mb-0">Siddharth</h5>
+                  <small>Hyderabad</small>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="testimonial-card small-card text-center p-4">
+                  <div class="stars">★★★★★</div>
+                  <p>Top notch quality. Loved the experience.</p>
+                  <img src="https://i.pravatar.cc/70?img=14" class="rounded-circle mt-3">
+                  <h6 class="fw-bold mt-2 mb-0">Naveen</h6>
+                  <small>Bangalore</small>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- DOTS -->
+        <div class="carousel-indicators position-static mt-4">
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0"
+            class="active bg-black"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" class="bg-black"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" class="bg-black"></button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="bg-dark text-light pt-5 pb-3 ">
+    <div class="container">
+
+      <!-- Row 1 -->
+      <div class="row text-start">
+
+        <!-- Column 1 : Logo + Brand -->
+        <div class="col-lg-3 col-md-6 mb-4">
+
+          <div class="d-flex align-items-center  justify-content-lg-start mb-2">
+            <img src="./assets/images/logo2.png" width="60" class="me-2">
+            <h5 class="fw-bold m-0 fs-1" style="color: #90b25d; font-family: var(--font-mono);">BATIQ</h5>
+          </div>
+
+          <p class="small">
+            Premium furniture crafted with quality and elegance since 1982.
+          </p>
+
+        </div>
+
+        <!-- Column 2 : Social Media -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h6 class="fw-bold mb-3 fs-3">Follow Us</h6>
+
+          <a href="#" class="text-light me-3 fs-3">
+            <i class="bi bi-facebook"></i>
+          </a>
+
+          <a href="#" class="text-light me-3 fs-3">
+            <i class="bi bi-instagram"></i>
+          </a>
+
+          <a href="#" class="text-light me-3 fs-3">
+            <i class="bi bi-twitter-x"></i>
+          </a>
+
+          <a href="#" class="text-light me-3 fs-3">
+            <i class="bi bi-youtube"></i>
+          </a>
+        </div>
+
+        <!-- Column 3 : Address + Customer Care -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h6 class="fw-bold mb-3 fs-3">Shop Address</h6>
+
+          <p class="small mb-2">
+            BATIQ Cricket Store<br>
+            Madurai, Tamil Nadu<br>
+            India
+          </p>
+
+          <h6 class="fw-bold mt-3 fs-3">Customer Care</h6>
+
+          <p class="small mb-1">
+            <i class="bi bi-telephone fs-3"></i> +91 98765 43210
+          </p>
+
+          <p class="small">
+            <i class="bi bi-envelope fs-3"></i> Support@batiq.com
+          </p>
+        </div>
+
+        <!-- Column 4 : Map + QR -->
+        <div class="col-lg-3 col-md-6 mb-4">
+
+          <h6 class="fw-bold mb-3 fs-3">Location</h6>
+
+          <!-- Map Image -->
+          <img src="./assets/images/Regional SEO Strategies_ Unlocking Local Search Potential.jpeg" class="img-fluid rounded mb-3">
+
+          <!-- QR + Location Text -->
+          <div class="d-flex align-items-center">
+
+            <img src="./assets/images/download.jpeg" width="80" class="me-3">
+
+            <div class="small">
+              <strong>Scan for Location</strong><br>
+              Google Maps<br>
+              BATIQ Cricket Store
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="contact py-4" style="background-color: #3a3838;">
+    <div class="row  ">
+      <div class="col text-center text-light">
+        <p class="mb-0 small">
+          © 2026 BATIQ. All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
